@@ -1,0 +1,44 @@
+https://www.youtube.com/watch?v=YYJgeV7sOvM
+step 1: create a directory
+step 2: open cmd from that directory
+step 3: run command : npm i truffle -g (you must have node js installed on your computer)
+step 4: mkdir vendingmachine
+step 5: cd vendingmachine
+step 6: truffle init
+step 7: create VendingMachine.sol and copy the code into into
+step 8: create 1_vending_machine_migrations.js and copy the code into into
+step 9: create VendingMachine.test.js and copy paste the code into into
+step 10: setup truffle-config.js and match solidity version number
+step 11: open cmd and run truffle test
+step 12: open cmd and run npm i -g ganache-cli
+step 13: ganache-cli 
+step 14: truffle migrate (on another cmd, inside vending machine folder)
+step 15: truffle console
+step 16: VendingMachine.deployed().then((x)=>{contract = x})
+step 17: contract.getVendingMachineBalance().then((b) => {balance = b})
+step 18: balance
+step 19. balance.toString()
+
+
+step 1: install metamask wallet and create account
+step 2: go to infura.io
+step 3: Create account and project
+step 4: create .gitignore file under VendingMachine folder
+step 5: write "# local env files
+.env" in 2 separate lines
+step 6: create .env file under VendingMachine folder
+step 7: in VendingMachine foler: npm i dotenv
+step 8: write in truffle-config.js 
+require('dotenv').config()
+const HDWalletProvider = require("@truffle/hdwallet-provider")
+step 9: write in .env 
+PRIVATE_KEY_0= (from acc1 of metamask private key)
+PRIVATE_KEY_1=(from account 2 of metamask private key)
+SECRET_KEY=(mnemonic from metamask)
+
+step 10: create alchemy account, create goerli faucet login using alchemy account
+step 11: update the truffle config as my machine
+step 12: npm i @truffle/hdwallet-provider
+step 13: truffle migrate --network goerli
+step 4: 0x0FD7EC5B9472f1F05e9b45249C78F7C064EdCC73 on etherscan
+
